@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+        <h1>Tables</h1>
+        <form onsubmit="printTable (); return false;">
+
+            <input type="number" id="numberInput" required placeholder="Enter a number to print Table" min="0">
+            <br>
+            <div id="button">
+                <button type="submit">Check</button> <button type="reset">Reset</button>
+            </div>
+        </form>
+        <br>
+
+    <h3 id="result"></h3>
+
+    <script src="./app.js"></script>
+
+    <!-- <script>
+        function printTable () {
+
+            let input = +document.querySelector("#numberInput").value;
+            document.querySelector("#result").innerHTML = ""
+
+            for (let i = 0 ; i < 10 ; i++) {
+                document.querySelector("#result")
+                .innerHTML += (`${input} x ${i + 1}= ${input * (i + 1)} <br>`);
+            }
+        }
+
+
+/////////////////////////////     OR   ////////////////////
+                // document.querySelector("#result")
+                // .innerHTML += (` <h3> ${input} x ${i+1}= ${input * (i+1)} </h3>`);
+
+    </script> -->
+
+</body>
+
+</html>
